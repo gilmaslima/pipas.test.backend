@@ -41,7 +41,7 @@ public class UserScoreServiceTest {
 			UserScore userScore = createUserScore();
 			Mockito.when(repository.getUnsorted(userScore)).thenReturn(Optional.of(userScore));
 
-			doNothing().when(repository).save(userScore);
+			Mockito.when(repository.save(userScore)).thenReturn(true);
 
 			service.save(userScore);
 
@@ -62,7 +62,7 @@ public class UserScoreServiceTest {
 			UserScore userScore = new UserScore(1, null);
 			Mockito.when(repository.getUnsorted(userScore)).thenReturn(Optional.ofNullable(null));
 
-			doNothing().when(repository).save(userScore);
+			Mockito.when(repository.save(userScore)).thenReturn(true);
 
 			service.save(userScore);
 
