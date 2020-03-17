@@ -89,6 +89,7 @@ The application use the follow package division:
 
 
 * ``br.com.pipas.test.backend.model`` - in this package there are objects that represent request and response data:
+
 [EmptyJsonResponse](https://github.com/gilmaslima/pipas.test.backend/blob/master/src/main/java/br/com/pipas/test/backend/model/EmptyJsonResponse.java) - Used to return a empty response.
 
 [ScoreResponse](https://github.com/gilmaslima/pipas.test.backend/blob/master/src/main/java/br/com/pipas/test/backend/model/ScoreResponse.java) - Used to return Json object for "/{userId}/position" and  "/highscorelist".
