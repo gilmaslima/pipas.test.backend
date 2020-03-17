@@ -28,9 +28,11 @@ Code coverage:
 ## Application layers
 The application use the follow package division:
 * ``br.com.pipas.test.backend`` - root package, classes:
+
 [Application](https://github.com/gilmaslima/pipas.test.backend/blob/master/src/main/java/br/com/pipas/test/backend/Application.java) - Used to start application and initialize Spring context.
 
 * ``br.com.pipas.test.backend.controller`` - in this package has the rest controller's classes:
+
 [UserScoreController](https://github.com/gilmaslima/pipas.test.backend/blob/master/src/main/java/br/com/pipas/test/backend/controller/UserScoreController.java)
 - createScore method 
   > makes available the rest entry POST /score
@@ -103,7 +105,6 @@ The application use the follow package division:
 
 * ``br.com.pipas.test.backend.service`` - Service application layer.
 [UserScoreService](https://github.com/gilmaslima/pipas.test.backend/blob/master/src/main/java/br/com/pipas/test/backend/service/UserScoreService.java) - In this class has the aplication's business logic.
-
 
 
 ## Configuração da aplicação
